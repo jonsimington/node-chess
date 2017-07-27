@@ -72,7 +72,9 @@ class AI extends BaseAI {
    * @param {string} reason - The human readable string explaining why you won or lost.
    */
   ended(won, reason) {
-    // pass
+      // pass
+
+      console.log("Total turns: " + this.game.moves.length * 2)
   }
 
 
@@ -124,7 +126,7 @@ class AI extends BaseAI {
               break;
           }
       }
-
+      console.log(historyTable[12][2])
       return true; // to signify we are done with our turn.
   }
 
